@@ -7,7 +7,7 @@ pipeline {
                     bat 'FOR /L %%G IN (1,1,30000) DO echo %%G'
                 }
                 timeout(time: 1, unit: 'MINUTES') {
-                    bat 'FOR /L %%G IN (1,1,3000) DO echo %%G'
+                    bat 'FOR /L %%G IN (1,1,10000) DO echo %%G'
                 }
             }
         }
